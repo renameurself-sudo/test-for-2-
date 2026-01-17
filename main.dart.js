@@ -102816,7 +102816,7 @@ g=t.z
 s=7
 return A.u(n.a.wo(n.oL(u.P),A.uL(null,A.V(["Accept","text/html,application/xhtml+xml"],h,g),null),g),$async$zc)
 case 7:m=b
-if(m.c!==200){A.b8().$1("FAIL: Status code "+A.o(m.c))
+if(m.c!==200&&m.c!==202){A.b8().$1("FAIL: Status code "+A.o(m.c))
 h=A.dI("Failed to fetch prices: "+A.o(m.c))
 throw A.k(h)}A.b8().$1("SUCCESS: Got HTML response ("+J.bS(m.a).length+" chars)")
 A.b8().$1("HTML received: "+J.bS(m.a).length+" chars")
@@ -102938,7 +102938,7 @@ e=t.z
 s=8
 return A.u(n.a.wo(m,A.uL(null,n.Cf(A.V(["Accept","text/html,application/xhtml+xml"],f,f)),B.R1),e),$async$v8)
 case 8:l=a0
-if(l.c!==200){i=A.dI("Status "+A.o(l.c))
+if(l.c!==200&&l.c!==202){i=A.dI("Status "+A.o(l.c))
 throw A.k(i)}s=9
 return A.u(A.aTK(A.bjE(),A.V(["html",J.bS(l.a),"url",m],f,f),null,t.GU,t.a),$async$v8)
 case 9:k=a0
@@ -103213,7 +103213,7 @@ b=A.V(["type","LATEST","duration","1_YEAR","draw","1","start","0","length","50",
 s=7
 return A.u(n.a.Sa(e,A.uL(null,A.V(["X-Requested-With","XMLHttpRequest","Accept","application/json, text/javascript, */*; q=0.01"],d,c),null),b,c),$async$Fg)
 case 7:m=a7
-if(m.c!==200){e=A.dI("Failed to fetch dividends: "+A.o(m.c))
+if(m.c!==200&&m.c!==202){e=A.dI("Failed to fetch dividends: "+A.o(m.c))
 throw A.k(e)}l=m.a
 k=A.c([],t.H7)
 if(t.f.b(l)&&l.aB("data")){j=t.D.a(l.i(0,"data"))
